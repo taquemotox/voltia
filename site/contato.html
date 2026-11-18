@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a equipe VOLTIA ou agende uma avaliação.">
+  <title>Contato | VOLTIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="logo">VOLT<span>IA</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+    <nav id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tecnologia.html">Technologies</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html" class="btn-nav">VOLTIA ONE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="secao topo-pagina">
+      <h1>Contato</h1>
+      <p class="sub">Agende uma avaliação ou tire suas dúvidas.</p>
+    </section>
+    <section class="secao">
+      <form id="formContato" class="form" novalidate>
+        <div class="campo"><label for="nome">Nome completo *</label><input type="text" id="nome" name="nome"><small class="erro"></small></div>
+        <div class="campo"><label for="email">E-mail *</label><input type="email" id="email" name="email"><small class="erro"></small></div>
+        <div class="campo"><label for="telefone">Telefone *</label><input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"><small class="erro"></small></div>
+        <div class="campo">
+          <label for="assunto">Assunto *</label>
+          <select id="assunto" name="assunto">
+            <option value="">Selecione</option>
+            <option value="avaliacao">Agendar avaliação</option>
+            <option value="seguro">Seguros</option>
+            <option value="parceria">Parceria</option>
+            <option value="outro">Outro</option>
+          </select><small class="erro"></small>
+        </div>
+        <div class="campo"><label for="mensagem">Mensagem *</label><textarea id="mensagem" name="mensagem" rows="5"></textarea><small class="erro"></small></div>
+        <div class="campo check"><input type="checkbox" id="lgpd" name="lgpd"><label for="lgpd">Aceito o uso dos meus dados para contato (LGPD)</label><small class="erro"></small></div>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="msgEnvio" class="resultado" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p><strong>VOLTIA</strong> — Proteção inteligente para a nova mobilidade.</p>
+    <p class="aviso">Projeto acadêmico (PRIT / TCC) do curso técnico em Informática para Internet. Dados fictícios. A VOLTIA Seguros é um conceito e não é uma seguradora autorizada.</p>
+    <p>&copy; 2026 Equipe VOLTIA</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/validacao.js"></script>
+</body></html>

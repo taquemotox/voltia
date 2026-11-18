@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planos conceituais de seguro para carros elétricos e híbridos.">
+  <title>Seguros | VOLTIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="logo">VOLT<span>IA</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+    <nav id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tecnologia.html">Technologies</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html" class="btn-nav">VOLTIA ONE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="secao topo-pagina">
+      <h1>VOLTIA Seguros</h1>
+      <p class="sub">Planos conceituais, sujeitos a estudo atuarial e a uma seguradora autorizada.</p>
+    </section>
+    <section class="secao">
+      <div class="grade">
+        <article class="card plano"><h2>Essential</h2><p>Coberturas básicas, assistência especializada e documentos digitais.</p></article>
+        <article class="card plano destaque"><p class="tag">Mais escolhido</p><h2>Intelligence</h2><p>Tudo do Essential + Passaporte Energético e avaliações do pacote.</p></article>
+        <article class="card plano"><h2>Premium</h2><p>Tudo do Intelligence + coberturas para componentes e recarga.</p></article>
+      </div>
+    </section>
+    <section class="secao">
+      <h2>Simulação demonstrativa</h2>
+      <form id="formSimulacao" class="form" novalidate>
+        <div class="campo">
+          <label for="valorCarro">Valor do carro (R$)</label>
+          <input type="number" id="valorCarro" name="valorCarro" placeholder="Ex: 150000">
+          <small class="erro"></small>
+        </div>
+        <div class="campo">
+          <label for="plano">Plano</label>
+          <select id="plano" name="plano">
+            <option value="">Selecione</option>
+            <option value="0.03">Essential</option>
+            <option value="0.04">Intelligence</option>
+            <option value="0.05">Premium</option>
+          </select>
+          <small class="erro"></small>
+        </div>
+        <button type="submit" class="btn">Simular</button>
+        <p id="resultado" class="resultado" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="secao">
+      <h2>Perguntas frequentes</h2>
+      <details><summary>A VOLTIA já vende seguros?</summary><p>Não. É um projeto acadêmico; para operar precisaria de autorização ou parceria com seguradora.</p></details>
+      <details><summary>Tem franquia zero?</summary><p>É um cenário em estudo, não uma condição garantida.</p></details>
+      <details><summary>Posso contratar só a tecnologia?</summary><p>Sim! As duas frentes são independentes.</p></details>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p><strong>VOLTIA</strong> — Proteção inteligente para a nova mobilidade.</p>
+    <p class="aviso">Projeto acadêmico (PRIT / TCC) do curso técnico em Informática para Internet. Dados fictícios. A VOLTIA Seguros é um conceito e não é uma seguradora autorizada.</p>
+    <p>&copy; 2026 Equipe VOLTIA</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body></html>

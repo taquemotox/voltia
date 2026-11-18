@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesso demonstrativo ao painel VOLTIA ONE.">
+  <title>VOLTIA ONE | VOLTIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="logo">VOLT<span>IA</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+    <nav id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tecnologia.html">Technologies</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html" class="btn-nav">VOLTIA ONE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="secao topo-pagina">
+      <h1>VOLTIA ONE</h1>
+      <p class="sub">Login demonstrativo. Use qualquer e-mail válido e senha com 6+ caracteres.</p>
+    </section>
+    <section class="secao">
+      <form id="formLogin" class="form" novalidate>
+        <div class="campo"><label for="loginEmail">E-mail</label><input type="email" id="loginEmail" name="email"><small class="erro"></small></div>
+        <div class="campo"><label for="loginSenha">Senha</label><input type="password" id="loginSenha" name="senha"><small class="erro"></small></div>
+        <button type="submit" class="btn">Entrar</button>
+        <p id="msgLogin" class="resultado" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p><strong>VOLTIA</strong> — Proteção inteligente para a nova mobilidade.</p>
+    <p class="aviso">Projeto acadêmico (PRIT / TCC) do curso técnico em Informática para Internet. Dados fictícios. A VOLTIA Seguros é um conceito e não é uma seguradora autorizada.</p>
+    <p>&copy; 2026 Equipe VOLTIA</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/validacao.js"></script>
+</body></html>
