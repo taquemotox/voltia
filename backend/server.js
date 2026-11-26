@@ -2,14 +2,16 @@
 const express = require('express');
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '..', 'site')));
 
 const contatos = []; // guarda em memoria (projeto escolar)
 
-app.get('/', function (req, res) { res.send('API VOLTIA funcionando!'); });
+
 
 app.post('/api/contato',
   body('nome').trim().isLength({ min: 5 }).withMessage('Nome muito curto'),
