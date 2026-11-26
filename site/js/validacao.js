@@ -1,5 +1,5 @@
 // Define a URL do servidor usada para enviar os dados do formulário de contato.
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://voltia-2.onrender.com';
 
 // Declara uma expressão regular para verificar se o e-mail possui um formato válido.
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
